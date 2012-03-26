@@ -33,7 +33,16 @@ public class ProblemOne extends Problem {
                 }
 
                 One.answer = sum;
-                One.solution = "I guess I should do this in Java.\n";
+                One.solution = "I approached this problem by creating two "+
+                        "variables; one, i, which would track the numbers from " +
+                        "1 to 1000, and sum, which would actually track the sum.  \n" +
+                        "I then created a 'for' loop which incremented i from 1 - 1000, "+
+                        "and within that loop, I checked if i was divisible by 3 " +
+                        " or 5 through modulus division.  \nIf it happened to be divisible, "+
+                        "it incremented sum by that amount (sum + i). \n "+
+                        "It should also be added that a \"Continue\" keyboard is " +
+                        "used when determining if i is divisble by 3 to skip over "+
+                        "checking if it is divisible by 5.\n\n";
                 One.question = "Find the sume of all multiples of 3 or 5 below 1000.\n";
                 System.out.println(One.question + "\n" + One.solution + "\n Therefore, the answer is " + One.answer);
     }

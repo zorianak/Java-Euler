@@ -11,7 +11,7 @@ public class JavaEuler {
      * @param args the command line arguments
      */
     
-    public static final int PROBLEMS = 1;
+    public static final int PROBLEMS = 2;
     public static void main(String[] args) {
         //counter for how many problems I've implemented.  Sadly, I can't figure
         //out a way to have JavaEuler actually count this intelligently, so
@@ -94,6 +94,9 @@ public class JavaEuler {
         {
             case 1: 
                 ProblemOne.ProbOne(problemNumber);
+                break;
+            case 2:
+                ProblemTwo.ProbTwo(problemNumber);
                 break;
             default: break;    
         }
