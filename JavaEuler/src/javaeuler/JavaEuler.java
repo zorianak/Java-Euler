@@ -45,7 +45,7 @@ public class JavaEuler {
             }
             else {
                 System.out.println("You did not enter a problem that I have done! \n");
-                System.out.println("Please enter a number between 0 and " + PROBLEMS + ".\n");
+                System.out.println("Please enter a number between 1 and " + PROBLEMS + ".\n");
             }
         }
         else {
@@ -87,21 +87,17 @@ public class JavaEuler {
     }
     
     //This gets the problem number, and pulls its information.
-    public static int GetProblem(int problemNumber)
+    public static void GetProblem(int problemNumber)
     {
         
         switch (problemNumber)
         {
-            case 1: Problem One = new Problem();
-                One.answer = "233168.\n";
-                One.solution = "I guess I should do this in Java.\n";
-                One.question = "Find the sume of all multiples of 3 or 5 below 1000.\n";
-                System.out.println(One.question + "\n" + One.solution + "\n Therefore, the answer is " + One.answer);
-                
+            case 1: 
+                ProblemOne.ProbOne(problemNumber);
+                break;
             default: break;    
         }
-        //there's better ways to return, but honestly the return doesn't matter right now.
-        return 1;
+        //void return
         
     }
 }

@@ -10,8 +10,8 @@ package javaeuler;
  */
 
 //this class will define the object for the problems
-public class Problem {
+public class Problem extends JavaEuler {
     public String question;
     public String solution;
-    public String answer;
+    public int answer;
 }
