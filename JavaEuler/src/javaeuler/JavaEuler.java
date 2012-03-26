@@ -19,13 +19,14 @@ public class JavaEuler {
         System.out.println("This app contains several problems from ProjectEuler.net. \n");
         while(true)
         {
-        System.out.println("Enter 1 for Problem 1.");
+        System.out.println("Enter 1 for Problem 1.\n");
+        System.out.println("Enter 2 for Problem 2.\n");
         
         //grab the input from the user to get which problem they want
         Scanner problemScanner = new Scanner (System.in);
         String chooseProblem = problemScanner.next();
 
-        System.out.println("You have entered " + chooseProblem + ".");
+        System.out.println("You have entered " + chooseProblem + ".\n");
         
         
         
@@ -75,7 +76,6 @@ public class JavaEuler {
         //now kiss!  I mean, compare!
         if (userInput <= PROBLEMS && userInput > 0)
         {
-            System.out.println("\n");
             return true;
         }
         else {
